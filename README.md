@@ -39,4 +39,20 @@ Battery-powered controller for a high-power red LED array. Freelance design acro
 
 ---
 
+## [GPS/GSM Tracker](gps-gsm-tracker/)
+
+<a href="gps-gsm-tracker/"><img src="gps-gsm-tracker/images/pcb_3d_top.png" alt="GPS/GSM Tracker" width="300" align="right"></a>
+
+LTE Cat-1 + GNSS vehicle tracker, Rev 3 redesigned in KiCad for production.
+
+- STM32U575 low-power MCU, SIMCom A7672 LTE modem, u-blox NEO-M9N GNSS
+- Li-ion charger with power-path, wide-input buck, backup cell
+- 4-layer, 65 × 94 mm, 192 components
+
+`STM32U5` `LTE Cat-1` `GNSS` `KiCad` `4-layer`
+
+<br clear="right">
+
+---
+
 [LinkedIn](https://www.linkedin.com/in/athanasios-vasiloglou-424599182/) · [GitHub profile](https://github.com/thanvas81)
