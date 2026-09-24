@@ -1,0 +1,231 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "7970852a-f7a4-4130-93ab-52424db57b3a")
+	(paper "A4")
+	(title_block
+		(title "Charger")
+	)
+	(lib_symbols)
+	(text "POWER SUPPLY\n"
+		(exclude_from_sim no)
+		(at 144.272 34.798 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+				(color 255 20 31 1)
+			)
+		)
+		(uuid "27ea130e-fbb3-48d8-8bbe-f0c9b287c9db")
+	)
+	(wire
+		(pts
+			(xy 137.16 96.52) (xy 151.13 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67620874-b5a8-49c3-9ad5-ad83333c045a")
+	)
+	(wire
+		(pts
+			(xy 104.14 92.71) (xy 113.03 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bf048f2-a41c-46ec-850e-44308ca50bc7")
+	)
+	(wire
+		(pts
+			(xy 105.41 97.79) (xy 113.03 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bed1615d-6348-44c1-abb3-9665668e7c21")
+	)
+	(wire
+		(pts
+			(xy 165.1 96.52) (xy 181.61 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f97f5fec-9026-4033-ae83-c60001e827d2")
+	)
+	(hierarchical_label "+3V3_OUT"
+		(shape input)
+		(at 181.61 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "18ffc806-846a-44e0-ad5d-b69c86f18d28")
+	)
+	(hierarchical_label "+V_bat"
+		(shape input)
+		(at 105.41 97.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "41408363-6d7c-460f-84c9-842fe4344fe0")
+	)
+	(hierarchical_label "Vin"
+		(shape input)
+		(at 104.14 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e7c1383a-ddbd-448c-9269-9d13979b7335")
+	)
+	(sheet
+		(at 151.13 92.71)
+		(size 13.97 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "185d0b05-e8e4-4a33-bf89-f67e4862ef19")
+		(property "Sheetname" "Buck-Boost"
+			(at 151.13 91.9984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Buck-Boost.kicad_sch"
+			(at 151.13 100.9146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Vin" input
+			(at 151.13 96.52 180)
+			(uuid "6e822bd6-03bd-4d13-a1b8-84ab25ead98c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Vout" input
+			(at 165.1 96.52 0)
+			(uuid "ceff0f47-eabe-4f97-8fa4-ba955562cf91")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "BLE_sensors"
+				(path "/06b47d3c-6b7b-411b-8755-cae193722202/30528618-a979-4bf1-b774-eef2b8cf727d"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 113.03 90.17)
+		(size 24.13 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "9515a31a-8844-493e-b588-3303487459e9")
+		(property "Sheetname" "Charger"
+			(at 113.03 89.4584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Charger.kicad_sch"
+			(at 113.03 100.9146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+V_bat" input
+			(at 113.03 97.79 180)
+			(uuid "5defe2dc-7851-415b-aacb-b2872bd0a0b8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Sys_Load" input
+			(at 137.16 96.52 0)
+			(uuid "204cd1af-9dca-41d5-85eb-8eff9be31597")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Vin" input
+			(at 113.03 92.71 180)
+			(uuid "c34d640a-be1a-492d-a057-cc2adb19dadd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "BLE_sensors"
+				(path "/06b47d3c-6b7b-411b-8755-cae193722202/30528618-a979-4bf1-b774-eef2b8cf727d"
+					(page "3")
+				)
+			)
+		)
+	)
+)
