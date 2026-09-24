@@ -167,3 +167,5 @@ Stand-alone, fully analog bench tester for vehicle control units.
 ---
 
 [LinkedIn](https://www.linkedin.com/in/athanasios-vasiloglou-424599182/) · [GitHub profile](https://github.com/thanvas81)
+
+<sub>Designs are shown for portfolio purposes only. Projects built for employers and clients are presented without source files, and are not licensed for reuse.</sub>
