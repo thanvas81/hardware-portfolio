@@ -138,4 +138,20 @@ Plug-in CAN bus interface that bridges a vehicle CAN bus to a host board over UA
 
 ---
 
+## [Relay & Analog Input Expansion Board](relay-analog-io-board/)
+
+<a href="relay-analog-io-board/"><img src="relay-analog-io-board/images/pcb_3d_top.png" alt="Relay and Analog Input Expansion Board" width="260" align="right"></a>
+
+Stack-on board adding a relay output, protected analog inputs and a UART to a host controller.
+
+- Panasonic TX2 relay, LMV324 analog front end with Zener / ESD protection
+- Mini-Fit Jr field connector, 1.27 mm stacking sockets
+- 2-layer, 65 × 38 mm, 41 components
+
+`Analog front end` `Relay` `KiCad`
+
+<br clear="right">
+
+---
+
 [LinkedIn](https://www.linkedin.com/in/athanasios-vasiloglou-424599182/) · [GitHub profile](https://github.com/thanvas81)
