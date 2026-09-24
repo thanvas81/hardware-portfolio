@@ -73,7 +73,7 @@ Schematic is split into hierarchical sheets: power supply, charger, buck-boost, 
 
 ## Firmware
 
-Written in C on **Zephyr RTOS / nRF Connect SDK**. Two roles:
+Written in C on **Zephyr RTOS / nRF Connect SDK** (source not included in this repository). Two roles:
 
 **Tag (reflector)** – this board. Reads the sensors every 2 s, broadcasts them in non-connectable advertising, answers Channel Sounding requests, and sleeps when no motion is detected.
 
