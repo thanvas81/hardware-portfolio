@@ -72,4 +72,20 @@ Industrial IoT carrier for an NXP i.MX 91 Linux SoM. Full design and bring-up.
 
 ---
 
+## [Vehicle I/O Validator](vehicle-io-validator/)
+
+<a href="vehicle-io-validator/"><img src="vehicle-io-validator/images/pcb_3d_top.png" alt="Vehicle I/O Validator" width="360" align="right"></a>
+
+Test tool that monitors 20 vehicle I/O lines and reports them to a PC over USB.
+
+- 20 protected inputs with red / blue status LEDs per channel
+- STM32U545, USB-C, 60 V buck from the vehicle supply
+- 4-layer, 142 × 72 mm, 232 components
+
+`STM32U5` `Automotive` `Test equipment` `KiCad`
+
+<br clear="right">
+
+---
+
 [LinkedIn](https://www.linkedin.com/in/athanasios-vasiloglou-424599182/) · [GitHub profile](https://github.com/thanvas81)
