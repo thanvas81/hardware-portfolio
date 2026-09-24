@@ -1,0 +1,19 @@
+%%{init: {"theme": "default", "themeVariables": { "background": "white"}}}%%
+flowchart TD
+
+    %% Setup & Discovery
+    A["Start → Scan"]
+    A --> B{"Ranging peer?"}
+    B -- "no" --> A
+    B -- "yes" --> C["Connect → Discover → CS-capabilities"]
+
+    %% CS Initiator
+    C --> D["Configure CS + start continuous"]
+    D --> E["Process ranging data"]
+    E --> F["Log distance (2 s)"]
+    F --> D
+
+    %% Connectionless GATT
+    C --> G["Subscribe custom data"]
+    G --> H["Receive and log env/sensor"]
+    H --> G

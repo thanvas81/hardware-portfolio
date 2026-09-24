@@ -1,0 +1,11 @@
+# KiCad backups, caches and per-user state
+*-backups/
+*.bak
+*.kicad_prl
+fp-info-cache
+~*.lck
+\#auto_saved_files#
+_autosave-*
+
+# Editor settings
+.vscode/

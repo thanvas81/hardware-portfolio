@@ -1,0 +1,18 @@
+%%{init: {"theme": "default", "themeVariables": { "background": "white"}}}%%
+flowchart TD
+    %% ===== Setup =====
+    A["Start + Init (BLE + Sensors)"]
+    A --> B["Start Adv (CS-reflector + data)"]
+
+    %% ===== Data Advert Loop =====
+    B --> C["Every 2 s: Read environmental + battery"]
+    C --> D["Send via non-connectable advertising"]
+
+    %% ===== Channel Sounding (Reflector thread) =====
+    B --> E["On connect → configure CS (reflector role)"]
+
+
+    %% ===== Power Management =====
+    B --> G["Motion detected? → stay awake"]
+    G --> H["No motion → sleep"]
+    H --> I["Motion interrupt → wake & resume"]
