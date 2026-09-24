@@ -2,62 +2,30 @@
 
 PCB and embedded hardware projects by **Athanasios Vasiloglou**, Embedded Systems & Hardware Engineer.
 
-Each folder is one project, with 3D renders, schematics, layer views and a write-up of the design.
+Each project has 3D renders, schematics, layer views where available, and a write-up of the design. Projects are listed from most to least complex.
+
+## At a glance
+
+| # | Project | Area | Board | Key parts |
+|---|---|---|---|---|
+| 1 | [Linux SoM Carrier Board](linux-som-carrier-board/) | Industrial IoT | 4-layer · 167 × 100 mm · 274 parts | i.MX 91 SoM, EC25 LTE, Ethernet, RS-485, CAN |
+| 2 | [Handheld High-Irradiance LED Controller](handheld-irradiance-system/) | Power electronics | 3 boards · Altium | USB-C PD, 2S charger, 4-switch buck-boost, nRF52840 |
+| 3 | [GPS/GSM Tracker (Rev 3)](gps-gsm-tracker/) | IoT & tracking | 4-layer · 65 × 94 mm · 192 parts | STM32U575, LTE Cat-1, NEO-M9N GNSS |
+| 4 | [BLE Channel Sounding Sensor Board](ble-channel-sounding-board/) | Wireless / thesis | 4-layer · 38 × 25 mm | nRF54L15, Channel Sounding, 17 cm mean error |
+| 5 | [Vehicle I/O Validator (Rev 2)](vehicle-io-validator/) | Automotive test | 4-layer · 142 × 72 mm · 232 parts | STM32U545, 20 protected inputs, USB-C |
+| 6 | [Compact LTE-M / NB-IoT Tracker](compact-lte-tracker/) | IoT & tracking | 4-layer · 49 × 53 mm · 89 parts | BG96, STM32U545, Li-ion charger |
+| 7 | [Control Unit Tester (Rev 2)](control-unit-tester/) | Automotive test | 4-layer · 194 × 52 mm · 236 parts | Window comparators, 20 switched outputs |
+| 8 | [RP2040 Diagnostic Tester (Rev 2)](rp2040-diagnostic-tester/) | Test tools | 2-layer · 69 × 54 mm | Raspberry Pi Pico, UART sniffer, 24 V input |
+| 9 | [CANLink Module](can-link-module/) | Expansion module | 2-layer · 65 × 64 mm | PIC18 CAN controller, TCAN3413 |
+| 10 | [Relay & Analog Input Expansion Board](relay-analog-io-board/) | Expansion module | 2-layer · 65 × 38 mm | TX2 relay, LMV324 analog front end |
 
 ---
 
-## [BLE Channel Sounding Sensor Board](ble-channel-sounding-board/)
+## Featured projects
 
-<a href="ble-channel-sounding-board/"><img src="ble-channel-sounding-board/images/pcb_3d_top.png" alt="BLE Channel Sounding Sensor Board" width="360" align="right"></a>
+### [Linux SoM Carrier Board](linux-som-carrier-board/)
 
-Custom nRF54L15 board for sub-metre indoor positioning with Bluetooth Channel Sounding. NTUA diploma thesis.
-
-- **17 cm** mean ranging error across three anchors
-- 4-layer, 38 × 25 mm PCB in KiCad
-- Accelerometer + magnetometer, temperature / humidity / pressure
-- USB-C or Li-ion, with charger and buck-boost
-
-`nRF54L15` `Zephyr` `KiCad` `BLE` `Channel Sounding`
-
-<br clear="right">
-
----
-
-## [Handheld High-Irradiance LED Controller](handheld-irradiance-system/)
-
-<a href="handheld-irradiance-system/"><img src="handheld-irradiance-system/images/main_board_top.png" alt="Handheld High-Irradiance LED Controller" width="360" align="right"></a>
-
-Battery-powered controller for a high-power red LED array. Freelance design across three boards.
-
-- USB-C PD input, 2S Li-ion charger with power-path
-- 4-switch buck-boost LED rail, 7 constant-current channels
-- nRF52840 Bluetooth LE, IR temperature sensing, fan control
-
-`Altium` `USB-C PD` `Power electronics` `nRF52840` `LED drivers`
-
-<br clear="right">
-
----
-
-## [GPS/GSM Tracker](gps-gsm-tracker/)
-
-<a href="gps-gsm-tracker/"><img src="gps-gsm-tracker/images/pcb_3d_top.png" alt="GPS/GSM Tracker" width="300" align="right"></a>
-
-LTE Cat-1 + GNSS vehicle tracker, Rev 3 redesigned in KiCad for production.
-
-- STM32U575 low-power MCU, SIMCom A7672 LTE modem, u-blox NEO-M9N GNSS
-- Li-ion charger with power-path, wide-input buck, backup cell
-- 4-layer, 65 × 94 mm, 192 components
-
-`STM32U5` `LTE Cat-1` `GNSS` `KiCad` `4-layer`
-
-<br clear="right">
-
----
-
-## [Linux SoM Carrier Board](linux-som-carrier-board/)
-
-<a href="linux-som-carrier-board/"><img src="linux-som-carrier-board/images/pcb_3d_top.png" alt="Linux SoM Carrier Board" width="360" align="right"></a>
+<a href="linux-som-carrier-board/"><img src="linux-som-carrier-board/images/pcb_3d_top.png" alt="Linux SoM Carrier Board" width="340" align="right"></a>
 
 Industrial IoT carrier for an NXP i.MX 91 Linux SoM. Full design and bring-up.
 
@@ -72,9 +40,58 @@ Industrial IoT carrier for an NXP i.MX 91 Linux SoM. Full design and bring-up.
 
 ---
 
-## [Vehicle I/O Validator](vehicle-io-validator/)
+### [Handheld High-Irradiance LED Controller](handheld-irradiance-system/)
 
-<a href="vehicle-io-validator/"><img src="vehicle-io-validator/images/pcb_3d_top.png" alt="Vehicle I/O Validator" width="360" align="right"></a>
+<a href="handheld-irradiance-system/"><img src="handheld-irradiance-system/images/main_board_top.png" alt="Handheld High-Irradiance LED Controller" width="340" align="right"></a>
+
+Battery-powered controller for a high-power red LED array. Freelance design across three boards.
+
+- USB-C PD input, 2S Li-ion charger with power-path
+- 4-switch buck-boost LED rail, 7 constant-current channels
+- nRF52840 Bluetooth LE, IR temperature sensing, fan control
+
+`Altium` `USB-C PD` `Power electronics` `nRF52840` `LED drivers`
+
+<br clear="right">
+
+---
+
+### [GPS/GSM Tracker](gps-gsm-tracker/)
+
+<a href="gps-gsm-tracker/"><img src="gps-gsm-tracker/images/pcb_3d_top.png" alt="GPS/GSM Tracker" width="340" align="right"></a>
+
+LTE Cat-1 + GNSS vehicle tracker, Rev 3 redesigned in KiCad for production.
+
+- STM32U575 low-power MCU, SIMCom A7672 LTE modem, u-blox NEO-M9N GNSS
+- Li-ion charger with power-path, wide-input buck, backup cell
+- 4-layer, 65 × 94 mm, 192 components
+
+`STM32U5` `LTE Cat-1` `GNSS` `KiCad` `4-layer`
+
+<br clear="right">
+
+---
+
+### [BLE Channel Sounding Sensor Board](ble-channel-sounding-board/)
+
+<a href="ble-channel-sounding-board/"><img src="ble-channel-sounding-board/images/pcb_3d_top.png" alt="BLE Channel Sounding Sensor Board" width="340" align="right"></a>
+
+Custom nRF54L15 board for sub-metre indoor positioning with Bluetooth Channel Sounding. NTUA diploma thesis.
+
+- **17 cm** mean ranging error across three anchors
+- 4-layer, 38 × 25 mm PCB in KiCad
+- Accelerometer + magnetometer, temperature / humidity / pressure
+- USB-C or Li-ion, with charger and buck-boost
+
+`nRF54L15` `Zephyr` `KiCad` `BLE` `Channel Sounding`
+
+<br clear="right">
+
+---
+
+### [Vehicle I/O Validator](vehicle-io-validator/)
+
+<a href="vehicle-io-validator/"><img src="vehicle-io-validator/images/pcb_3d_top.png" alt="Vehicle I/O Validator" width="340" align="right"></a>
 
 Test tool that monitors 20 vehicle I/O lines and reports them to a PC over USB.
 
@@ -88,26 +105,9 @@ Test tool that monitors 20 vehicle I/O lines and reports them to a PC over USB.
 
 ---
 
-## [Control Unit Tester](control-unit-tester/)
+### [Compact LTE-M / NB-IoT Tracker](compact-lte-tracker/)
 
-<a href="control-unit-tester/"><img src="control-unit-tester/images/pcb_3d_top.png" alt="Control Unit Tester" width="360" align="right"></a>
-
-Stand-alone, fully analog bench tester for vehicle control units.
-
-- 16 inputs with window-comparator status LEDs
-- 20 outputs, each switchable to +Vin / open / GND
-- 60 V buck from the vehicle supply, no MCU needed
-- 4-layer, 194 × 52 mm, 236 components
-
-`Analog` `Automotive` `Test equipment` `KiCad`
-
-<br clear="right">
-
----
-
-## [Compact LTE-M / NB-IoT Tracker](compact-lte-tracker/)
-
-<a href="compact-lte-tracker/"><img src="compact-lte-tracker/images/pcb_3d_top.png" alt="Compact LTE-M / NB-IoT Tracker" width="260" align="right"></a>
+<a href="compact-lte-tracker/"><img src="compact-lte-tracker/images/pcb_3d_top.png" alt="Compact LTE-M / NB-IoT Tracker" width="340" align="right"></a>
 
 Small battery-backed asset tracker.
 
@@ -122,52 +122,29 @@ Small battery-backed asset tracker.
 
 ---
 
-## [CANLink Module](can-link-module/)
+### [Control Unit Tester](control-unit-tester/)
 
-<a href="can-link-module/"><img src="can-link-module/images/pcb_3d_top.png" alt="CANLink Module" width="220" align="right"></a>
+<a href="control-unit-tester/"><img src="control-unit-tester/images/pcb_3d_top.png" alt="Control Unit Tester" width="340" align="right"></a>
 
-Plug-in CAN bus interface that bridges a vehicle CAN bus to a host board over UART.
+Stand-alone, fully analog bench tester for vehicle control units.
 
-- PIC18LF26K83 with on-chip CAN controller, TI TCAN3413 transceiver
-- Mini-Fit Jr vehicle connector, stacking sockets to the host board
-- 2-layer, 65 × 64 mm, 40 components
+- 16 inputs with window-comparator status LEDs
+- 20 outputs, each switchable to +Vin / open / GND
+- 60 V buck from the vehicle supply, no MCU needed
+- 4-layer, 194 × 52 mm, 236 components
 
-`CAN` `PIC18` `Automotive` `KiCad`
-
-<br clear="right">
-
----
-
-## [Relay & Analog Input Expansion Board](relay-analog-io-board/)
-
-<a href="relay-analog-io-board/"><img src="relay-analog-io-board/images/pcb_3d_top.png" alt="Relay and Analog Input Expansion Board" width="260" align="right"></a>
-
-Stack-on board adding a relay output, protected analog inputs and a UART to a host controller.
-
-- Panasonic TX2 relay, LMV324 analog front end with Zener / ESD protection
-- Mini-Fit Jr field connector, 1.27 mm stacking sockets
-- 2-layer, 65 × 38 mm, 41 components
-
-`Analog front end` `Relay` `KiCad`
+`Analog` `Automotive` `Test equipment` `KiCad`
 
 <br clear="right">
 
 ---
 
-## [RP2040 Diagnostic Tester](rp2040-diagnostic-tester/)
+## More boards
 
-<a href="rp2040-diagnostic-tester/"><img src="rp2040-diagnostic-tester/images/pcb_3d_top.png" alt="RP2040 Diagnostic Tester" width="260" align="right"></a>
-
-Raspberry Pi Pico–based field tool that talks to and sniffs UART links on 24 V equipment.
-
-- 24 V input with TVS and reverse protection, 24 V → 5 V module
-- Master and sniffer UARTs with level translation
-- I²C LCD and push-buttons for stand-alone use
-- 2-layer, 69 × 54 mm, 43 components
-
-`RP2040` `Raspberry Pi Pico` `UART` `KiCad`
-
-<br clear="right">
+| | |
+|:---:|:---:|
+| <a href="rp2040-diagnostic-tester/"><img src="rp2040-diagnostic-tester/images/pcb_3d_top.png" alt="RP2040 Diagnostic Tester" width="260"></a><br>**[RP2040 Diagnostic Tester](rp2040-diagnostic-tester/)**<br>Raspberry Pi Pico field tool that talks to and sniffs UART links on 24 V equipment, with LCD and buttons | <a href="can-link-module/"><img src="can-link-module/images/pcb_3d_top.png" alt="CANLink Module" width="200"></a><br>**[CANLink Module](can-link-module/)**<br>Plug-in CAN ↔ UART bridge: PIC18 with on-chip CAN controller and TI TCAN3413 transceiver |
+| <a href="relay-analog-io-board/"><img src="relay-analog-io-board/images/pcb_3d_top.png" alt="Relay and Analog Input Expansion Board" width="260"></a><br>**[Relay & Analog Input Expansion Board](relay-analog-io-board/)**<br>Stack-on board with a relay output and protected, buffered analog inputs | |
 
 ---
 
