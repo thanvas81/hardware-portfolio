@@ -23,4 +23,20 @@ Custom nRF54L15 board for sub-metre indoor positioning with Bluetooth Channel So
 
 ---
 
+## [Handheld High-Irradiance LED Controller](handheld-irradiance-system/)
+
+<a href="handheld-irradiance-system/"><img src="handheld-irradiance-system/images/main_board_top.png" alt="Handheld High-Irradiance LED Controller" width="360" align="right"></a>
+
+Battery-powered controller for a high-power red LED array. Freelance design across three boards.
+
+- USB-C PD input, 2S Li-ion charger with power-path
+- 4-switch buck-boost LED rail, 7 constant-current channels
+- nRF52840 Bluetooth LE, IR temperature sensing, fan control
+
+`Altium` `USB-C PD` `Power electronics` `nRF52840` `LED drivers`
+
+<br clear="right">
+
+---
+
 [LinkedIn](https://www.linkedin.com/in/athanasios-vasiloglou-424599182/) · [GitHub profile](https://github.com/thanvas81)
