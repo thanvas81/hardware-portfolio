@@ -154,4 +154,21 @@ Stack-on board adding a relay output, protected analog inputs and a UART to a ho
 
 ---
 
+## [RP2040 Diagnostic Tester](rp2040-diagnostic-tester/)
+
+<a href="rp2040-diagnostic-tester/"><img src="rp2040-diagnostic-tester/images/pcb_3d_top.png" alt="RP2040 Diagnostic Tester" width="260" align="right"></a>
+
+Raspberry Pi Pico–based field tool that talks to and sniffs UART links on 24 V equipment.
+
+- 24 V input with TVS and reverse protection, 24 V → 5 V module
+- Master and sniffer UARTs with level translation
+- I²C LCD and push-buttons for stand-alone use
+- 2-layer, 69 × 54 mm, 43 components
+
+`RP2040` `Raspberry Pi Pico` `UART` `KiCad`
+
+<br clear="right">
+
+---
+
 [LinkedIn](https://www.linkedin.com/in/athanasios-vasiloglou-424599182/) · [GitHub profile](https://github.com/thanvas81)
