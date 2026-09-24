@@ -122,4 +122,20 @@ Small battery-backed asset tracker.
 
 ---
 
+## [CANLink Module](can-link-module/)
+
+<a href="can-link-module/"><img src="can-link-module/images/pcb_3d_top.png" alt="CANLink Module" width="220" align="right"></a>
+
+Plug-in CAN bus interface that bridges a vehicle CAN bus to a host board over UART.
+
+- PIC18LF26K83 with on-chip CAN controller, TI TCAN3413 transceiver
+- Mini-Fit Jr vehicle connector, stacking sockets to the host board
+- 2-layer, 65 × 64 mm, 40 components
+
+`CAN` `PIC18` `Automotive` `KiCad`
+
+<br clear="right">
+
+---
+
 [LinkedIn](https://www.linkedin.com/in/athanasios-vasiloglou-424599182/) · [GitHub profile](https://github.com/thanvas81)
