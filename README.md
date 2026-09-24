@@ -8,20 +8,38 @@ Each project has 3D renders, schematics, layer views where available, and a writ
 
 | # | Project | Area | Board | Key parts |
 |---|---|---|---|---|
-| 1 | [Linux SoM Carrier Board](linux-som-carrier-board/) | Industrial IoT | 4-layer · 167 × 100 mm · 274 parts | i.MX 91 SoM, EC25 LTE, Ethernet, RS-485, CAN |
-| 2 | [Handheld High-Irradiance LED Controller](handheld-irradiance-system/) | Power electronics | 3 boards · Altium | USB-C PD, 2S charger, 4-switch buck-boost, nRF52840 |
-| 3 | [GPS/GSM Tracker (Rev 3)](gps-gsm-tracker/) | IoT & tracking | 4-layer · 65 × 94 mm · 192 parts | STM32U575, LTE Cat-1, NEO-M9N GNSS |
-| 4 | [BLE Channel Sounding Sensor Board](ble-channel-sounding-board/) | Wireless / thesis | 4-layer · 38 × 25 mm | nRF54L15, Channel Sounding, 17 cm mean error |
-| 5 | [Vehicle I/O Validator (Rev 2)](vehicle-io-validator/) | Automotive test | 4-layer · 142 × 72 mm · 232 parts | STM32U545, 20 protected inputs, USB-C |
-| 6 | [Compact LTE-M / NB-IoT Tracker](compact-lte-tracker/) | IoT & tracking | 4-layer · 49 × 53 mm · 89 parts | BG96, STM32U545, Li-ion charger |
-| 7 | [Control Unit Tester (Rev 2)](control-unit-tester/) | Automotive test | 4-layer · 194 × 52 mm · 236 parts | Window comparators, 20 switched outputs |
-| 8 | [RP2040 Diagnostic Tester (Rev 2)](rp2040-diagnostic-tester/) | Test tools | 2-layer · 69 × 54 mm | Raspberry Pi Pico, UART sniffer, 24 V input |
-| 9 | [CANLink Module](can-link-module/) | Expansion module | 2-layer · 65 × 64 mm | PIC18 CAN controller, TCAN3413 |
-| 10 | [Relay & Analog Input Expansion Board](relay-analog-io-board/) | Expansion module | 2-layer · 65 × 38 mm | TX2 relay, LMV324 analog front end |
+| 1 | [Industrial Controller / Gateway](industrial-controller-gateway/) | Industrial control | 4-layer · 340 × 147 mm · 486 parts | STM32H743, KSZ8863 Ethernet switch, isolated RS-485, mains AC/DC |
+| 2 | [Linux SoM Carrier Board](linux-som-carrier-board/) | Industrial IoT | 4-layer · 167 × 100 mm · 274 parts | i.MX 91 SoM, EC25 LTE, Ethernet, RS-485, CAN |
+| 3 | [Handheld High-Irradiance LED Controller](handheld-irradiance-system/) | Power electronics | 3 boards · Altium | USB-C PD, 2S charger, 4-switch buck-boost, nRF52840 |
+| 4 | [GPS/GSM Tracker (Rev 3)](gps-gsm-tracker/) | IoT & tracking | 4-layer · 65 × 94 mm · 192 parts | STM32U575, LTE Cat-1, NEO-M9N GNSS |
+| 5 | [BLE Channel Sounding Sensor Board](ble-channel-sounding-board/) | Wireless / thesis | 4-layer · 38 × 25 mm | nRF54L15, Channel Sounding, 17 cm mean error |
+| 6 | [Vehicle I/O Validator (Rev 2)](vehicle-io-validator/) | Automotive test | 4-layer · 142 × 72 mm · 232 parts | STM32U545, 20 protected inputs, USB-C |
+| 7 | [Compact LTE-M / NB-IoT Tracker](compact-lte-tracker/) | IoT & tracking | 4-layer · 49 × 53 mm · 89 parts | BG96, STM32U545, Li-ion charger |
+| 8 | [Control Unit Tester (Rev 2)](control-unit-tester/) | Automotive test | 4-layer · 194 × 52 mm · 236 parts | Window comparators, 20 switched outputs |
+| 9 | [RP2040 Diagnostic Tester (Rev 2)](rp2040-diagnostic-tester/) | Test tools | 2-layer · 69 × 54 mm | Raspberry Pi Pico, UART sniffer, 24 V input |
+| 10 | [CANLink Module](can-link-module/) | Expansion module | 2-layer · 65 × 64 mm | PIC18 CAN controller, TCAN3413 |
+| 11 | [Relay & Analog Input Expansion Board](relay-analog-io-board/) | Expansion module | 2-layer · 65 × 38 mm | TX2 relay, LMV324 analog front end |
 
 ---
 
 ## Featured projects
+
+### [Industrial Controller / Gateway](industrial-controller-gateway/)
+
+<a href="industrial-controller-gateway/"><img src="industrial-controller-gateway/images/pcb_3d_top.png" alt="Industrial Controller / Gateway" width="340" align="right"></a>
+
+Mains-powered controller bridging a managed Ethernet switch to 24 V field I/O.
+
+- STM32H743, KSZ8863 2-port Ethernet switch
+- 2× isolated RS-485, 4–20 mA, PT100, opto inputs, relays, smart high-side outputs
+- On-board 90 W AC/DC, four isolation domains, mains relay channel
+- 4-layer, 340 × 147 mm, 486 components
+
+`STM32H7` `Ethernet` `Isolation` `Mains` `KiCad`
+
+<br clear="right">
+
+---
 
 ### [Linux SoM Carrier Board](linux-som-carrier-board/)
 
