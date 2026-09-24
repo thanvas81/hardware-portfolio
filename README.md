@@ -105,4 +105,21 @@ Stand-alone, fully analog bench tester for vehicle control units.
 
 ---
 
+## [Compact LTE-M / NB-IoT Tracker](compact-lte-tracker/)
+
+<a href="compact-lte-tracker/"><img src="compact-lte-tracker/images/pcb_3d_top.png" alt="Compact LTE-M / NB-IoT Tracker" width="260" align="right"></a>
+
+Small battery-backed asset tracker.
+
+- Quectel BG96 (LTE-M / NB-IoT + GNSS), STM32U545
+- Accelerometer wake-up, NOR flash logging
+- Li-ion charger, wide-input buck, switched modem rail
+- 4-layer, 49 × 53 mm, 89 components
+
+`STM32U5` `LTE-M` `NB-IoT` `GNSS` `KiCad`
+
+<br clear="right">
+
+---
+
 [LinkedIn](https://www.linkedin.com/in/athanasios-vasiloglou-424599182/) · [GitHub profile](https://github.com/thanvas81)
