@@ -88,4 +88,21 @@ Test tool that monitors 20 vehicle I/O lines and reports them to a PC over USB.
 
 ---
 
+## [Control Unit Tester](control-unit-tester/)
+
+<a href="control-unit-tester/"><img src="control-unit-tester/images/pcb_3d_top.png" alt="Control Unit Tester" width="360" align="right"></a>
+
+Stand-alone, fully analog bench tester for vehicle control units.
+
+- 16 inputs with window-comparator status LEDs
+- 20 outputs, each switchable to +Vin / open / GND
+- 60 V buck from the vehicle supply, no MCU needed
+- 4-layer, 194 × 52 mm, 236 components
+
+`Analog` `Automotive` `Test equipment` `KiCad`
+
+<br clear="right">
+
+---
+
 [LinkedIn](https://www.linkedin.com/in/athanasios-vasiloglou-424599182/) · [GitHub profile](https://github.com/thanvas81)
