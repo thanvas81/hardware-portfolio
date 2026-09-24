@@ -55,4 +55,21 @@ LTE Cat-1 + GNSS vehicle tracker, Rev 3 redesigned in KiCad for production.
 
 ---
 
+## [Linux SoM Carrier Board](linux-som-carrier-board/)
+
+<a href="linux-som-carrier-board/"><img src="linux-som-carrier-board/images/pcb_3d_top.png" alt="Linux SoM Carrier Board" width="360" align="right"></a>
+
+Industrial IoT carrier for an NXP i.MX 91 Linux SoM. Full design and bring-up.
+
+- Quectel EC25 LTE (mini-PCIe), dual SIM
+- Ethernet, RS-485, CAN, USB-C, digital I/O, RTC, tamper input
+- Wide-input supply, Li-ion backup with power-path
+- 4-layer, 167 × 100 mm, 274 components
+
+`i.MX 91` `Embedded Linux` `LTE` `KiCad` `Industrial IoT`
+
+<br clear="right">
+
+---
+
 [LinkedIn](https://www.linkedin.com/in/athanasios-vasiloglou-424599182/) · [GitHub profile](https://github.com/thanvas81)
